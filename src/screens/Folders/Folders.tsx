@@ -3,7 +3,7 @@ import { HeaderSection } from "../Overview/sections/HeaderSection";
 import { NavigationSection } from "../Overview/sections/NavigationSection";
 import { Card } from "../../components/ui/card";
 import { Button } from "../../components/ui/button";
-import { Plus, MoreVertical, Wifi } from "lucide-react";
+import { Plus, MoveVertical as MoreVertical, Wifi } from "lucide-react";
 import { CreateVaultDialog } from "./components/CreateVaultDialog";
 
 interface Folder {

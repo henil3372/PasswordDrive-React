@@ -1,4 +1,4 @@
-import { SearchIcon, SettingsIcon } from "lucide-react";
+import { Search as SearchIcon, Settings as SettingsIcon } from "lucide-react";
 import React from "react";
 import {
   Avatar,
