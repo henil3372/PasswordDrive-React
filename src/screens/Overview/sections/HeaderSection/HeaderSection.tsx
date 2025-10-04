@@ -1,11 +1,10 @@
-import { BellIcon, SearchIcon, SettingsIcon } from "lucide-react";
+import { SearchIcon, SettingsIcon } from "lucide-react";
 import React from "react";
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
 } from "../../../../components/ui/avatar";
-import { Badge } from "../../../../components/ui/badge";
 import { Input } from "../../../../components/ui/input";
 
 export const HeaderSection = (): JSX.Element => {
@@ -38,13 +37,6 @@ export const HeaderSection = (): JSX.Element => {
           </div>
 
           <div className="flex items-center gap-5 flex-shrink-0">
-            <div className="relative">
-              <BellIcon className="w-6 h-6 text-type-grey-2 cursor-pointer" />
-              <Badge className="absolute -top-1 -right-1 h-4 min-w-4 flex items-center justify-center p-1 bg-sea-blue text-bg-white text-[8px] font-medium rounded-full border-0">
-                5
-              </Badge>
-            </div>
-
             <SettingsIcon className="w-6 h-6 text-type-grey-2 cursor-pointer" />
 
             <Avatar className="w-6 h-6 cursor-pointer">

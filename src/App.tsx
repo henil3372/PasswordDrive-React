@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { Overview } from "./screens/Overview";
 import { PasswordGenerator } from "./screens/PasswordGenerator";
 import { Vault } from "./screens/Vault";
+import { Folders } from "./screens/Folders";
 
 export const App = (): JSX.Element => {
-  const [currentPath, setCurrentPath] = useState("vault");
+  const [currentPath, setCurrentPath] = useState("folders");
 
   const renderScreen = () => {
     switch (currentPath) {
@@ -14,8 +15,10 @@ export const App = (): JSX.Element => {
         return <PasswordGenerator onNavigate={setCurrentPath} />;
       case "overview":
         return <Overview onNavigate={setCurrentPath} />;
+      case "folders":
+        return <Folders onNavigate={setCurrentPath} />;
       default:
-        return <Vault onNavigate={setCurrentPath} />;
+        return <Folders onNavigate={setCurrentPath} />;
     }
   };
 
